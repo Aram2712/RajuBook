@@ -1,0 +1,35 @@
+.inputMainBlock{
+    margin: 10px 0;
+}
+
+.inputMessage{
+    color: white;
+}
+
+.input{
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    max-width: 378px;
+    outline: none;
+    border: 1px solid rgba(100, 100, 100, 1);
+    background: none;
+    padding: 12px 10px;
+    border-radius: 8px;
+}
+
+.passwordInput{
+    position: relative;
+}
+
+.passwordEye{
+    cursor: pointer;
+    position: absolute;
+    right: 4%;
+    top: 44%;
+}
+
+
+.unValidLogOrPass{
+    border: 1px solid red;
+}

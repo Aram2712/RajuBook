@@ -1,0 +1,300 @@
+.nav{
+    width: 100%;
+    z-index: 10;
+    position: fixed;
+    background-color: #000211;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+   
+}
+.nav>div {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+   max-width: 150px;
+   text-decoration: none;
+   margin-left: 5%;
+}
+
+.animation_deposit_image {
+    width: 150px;
+    height: 120px;
+    display: inline-block;
+}
+.logoImage{
+    width: 100%;
+}
+
+.registerPartButtons{
+    display: flex;
+}
+.name_balance_list {
+    display: flex;
+    flex-direction: column;
+}
+.name_balance_list>li {
+    font-size: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.registerBlock button {
+    margin: 10px;
+    display: block;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 28px;
+    font-weight: 600;
+}
+
+.loginBtn {
+    color: #fff;
+    background: linear-gradient(180deg, #fd4fc1 0%, #b85cc2 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+}
+
+.loginBtn:hover {
+    background: linear-gradient(180deg, #fd4fc1 0%, #cc85d9 100%);
+}
+/* 
+.mainPart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+
+.loginedUserName{
+    margin: 0;
+    margin-right: 3px;
+    color: white;
+}
+
+.userInformation{
+    display: flex;
+    align-items: center;
+
+}
+
+.userInformation ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.userInformation ul>li{
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-bottom: 0.5px solid rgba(255,255,255,0.2);
+    width: 100%;
+    text-align: end;
+    display: flex;
+    justify-content: flex-end;
+}
+.mobile_balance_text {
+    color: white;
+    font-size: 20px;
+}
+.hidden_user_informacia_box{
+    width: auto;
+    height: auto;
+    /* border: 1px solid white; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 90px;
+    right: 3%;
+    background: #000211;
+    padding:0 20px;
+    border-radius: 5px;
+}
+.userInformationList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:0;
+    padding: 0;
+}
+.userInformationList>li {
+    padding: 5px 0;
+    width: 100%;
+    color: rgba(255,255,255,0.6);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-left: 0 !important;
+    margin: 10px 0;
+}
+.change_password_li:hover {
+    color:#fd4fc1
+}
+.logoutBtn{
+    display: block;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(180deg, #fd4fc1 0%, #b85cc2 100%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+.hamburgerBtn{
+    display: none;
+}
+
+.mobilePart{
+    width: 100%;
+    top: 90px;
+    height: 100vh;
+    position: fixed;
+    background-color: #000211;
+    transition: all 0.5s;
+    z-index: 99999;
+}
+.mobile_change_password_li {
+    font-size: 18px;
+    color: white;
+}
+.registerPartButtonsMobile{
+    display: flex;
+    justify-content: center;
+}
+
+.open {
+    left: 0%;
+}
+
+.hamburgerBtn{
+    outline: none;
+    background: none;
+    border: none;
+    color: #fd4fc1;
+    font-size: 30px;
+}
+
+.loggedUser ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.loggedUser>ul{
+    display:flex;
+    align-items: center;
+    
+}
+
+.loggedUser ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.loggedUser ul li a{
+    text-decoration: none;
+}
+
+.depositBtn{
+    text-decoration: none;
+    color: white;
+    margin-left: 55%;
+}
+.userInformationData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.userDataHeader>p {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+.userInformation ul{
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+.deleteModalCloseIcon {
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.deleteAccountHead {
+    text-align: center;
+    margin: 30px;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.deleteModalButtons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.yesButton {
+    width: 100px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background: green;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+.noButton {
+    width: 100px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    background: red;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+}
+@media(max-width: 600px){
+    .mainPart{
+        display: none;
+    }
+
+    .hamburgerBtn{
+        display: block;
+        /* margin-right: 6%; */
+    }
+    .depositBtn{
+        margin-left: 30%;
+    }
+    .registerBlock button{
+        margin:15px;
+        display: block;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        padding: 5px 24px;
+        font-weight: 600;
+    }
+
+}

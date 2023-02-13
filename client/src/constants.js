@@ -1,0 +1,10 @@
+export const baseURL = "http://localhost:5000";
+// export const baseURL = "https://back.rajubooks.co";
+export const LOGIN = 'LOGIN';
+export const REGISTER = 'REGISTER';
+export const GET_USER = 'GET_USER';
+export const GET_OWNER_INFO = 'GET_OWNER_INFO';
+export const CREATE_ACCOUNT = 'CREATE_ACCOUNT';
+export const GET_ALL_ACCOUNTS = 'GET_ALL_ACCOUNTS';
+export const RESET_PASSWORD = 'RESET_PASSWORD';
+export const SEND_DEPOSIT_TO_ADMIN = 'SEND_DEPOSIT_TO_ADMIN';

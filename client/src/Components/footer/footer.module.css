@@ -1,0 +1,206 @@
+.footer {
+    border-top: 2px solid grey;
+    background: black;
+    padding: 50px 0;
+}
+
+.footerTitle {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+    background: linear-gradient(17deg, rgb(253, 79, 193) 0%, rgb(253, 79, 193) 50%, rgb(253, 79, 193) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+}
+
+
+.footerInfo {
+    text-align: center;
+    color: #fd4fc1;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.footerLink {
+    display: flex;
+    justify-content: center;
+}
+
+
+.link {
+    border-radius: 50%;
+    margin: 30px 10px;
+    text-decoration: none !important;
+}
+
+.link > i {
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkgrey;
+}
+
+.whatsapp:hover {
+    background: rgb(77, 203, 91);
+}
+
+.instagram:hover {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(164deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgb(253, 79, 193) 100%);
+}
+
+.facebook:hover {
+    background: rgb(7, 72, 128);
+}
+
+
+.telegram:hover {
+    background: rgb(46, 163, 212);
+}
+
+
+.infoFor {
+    color: #12abc3;;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.supPort {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 2;
+    margin-bottom: 15px;
+}
+
+
+.footerLinkWhatsapp {
+    max-width: 545px;
+    margin: auto;
+    padding: 0.5rem 2rem;
+    font-size: 30px;
+    border: 3px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    text-decoration: none !important;
+    font-weight: bold;
+    transition: all 500ms;
+}
+
+.footerLinkWhatsapp {
+    background: linear-gradient(17deg, rgb(253, 79, 193) 0%, rgb(253, 79, 193) 50%, rgb(253, 79, 193) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+
+/* .footerLinkWhatsapp:hover {
+    background: #fd4fc1;
+    color: black;
+} */
+
+
+.logoFooter {
+    max-width: 450px;
+}
+
+
+.footerDepositInfo {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.depositInfoImg {
+    max-width: 110px;
+    margin: 5px;
+}
+
+.depositInfoImgSize{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footerInfoText {
+    margin-top: 1rem;
+    font-size: 28px;
+    text-transform: capitalize;
+    font-family: 'Do Gothic Lt', sans-serif;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+@media (max-width: 1050px) {
+
+    .footerDepositInfo{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 900px) {
+    .infoFor{
+        font-size: 26px;
+
+    }
+
+}
+
+@media (max-width: 750px) {
+
+    .logoFooter{
+        max-width: 320px;
+        margin-bottom: 40px;
+    }
+
+    .footerLinkWhatsapp{
+        max-width: 304px;
+
+    }
+}
+
+@media (max-width: 450px) {
+
+    .infoFor{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .footerTitle{
+
+        font-size: 19px;
+        margin-bottom: 0.5rem;
+        line-height: 30px;
+
+    }
+}
+
+
+@media (max-width: 350px) {
+
+    .logoFooter{
+        max-width: 252px;
+
+    }
+}

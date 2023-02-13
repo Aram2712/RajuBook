@@ -1,0 +1,207 @@
+.closeBtn {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    color: grey;
+    display: block;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+}
+
+.logo {
+    width: 120px;
+}
+
+.closeBtn i {
+    font-size: 25px;
+}
+
+form .logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.invalidMessage {
+    display: flex;
+    align-items: center;
+    color: red;
+    margin: 20px 0;
+}
+
+.invalidMessage img {
+    margin-right: 8px;
+}
+
+.rememberField {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.success_registr_exit_box {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    /* border: 1px solid white; */
+    align-items: center;
+    justify-content: flex-end;
+}
+.registr_whatsapp_number{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+.success_modal_image {
+    width: 40%;
+    margin: 0 30%;
+}
+.success_modal_head {
+    text-align: center;
+    margin: 0;
+    color:violet;
+    font-size: 27px;
+}
+.registr_whatsapp_input {
+    width: 85%;
+    background: none;
+    border-radius: 7px;
+    height: 45px;
+    border: 0.3px solid rgba(255,255,255,0.5);
+    text-indent: 5px;
+    margin-right: 5px;
+}
+.registr_whatsapp_input {
+    outline: none;
+}
+
+.rememberField label {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#remember {
+    display: none;
+}
+
+.check {
+    display: flex;
+    width: 22px;
+    height: 22px;
+    left: 500px;
+    top: 402px;
+    border: 2px solid #646464;
+}
+
+.check img {
+    width: 100%;
+}
+
+.signInBtn {
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+    color: rgba(9, 25, 93, 1);
+    text-transform: uppercase;
+    max-width: 480px;
+    outline: none;
+    border: 1px solid rgba(100, 100, 100, 1);
+    background: rgb(253, 79, 193);
+    padding: 12px 10px;
+    border-radius: 8px;
+}
+
+.signInBtn:hover {
+    background: linear-gradient(180deg, #fd4fc1 0%, rgba(225, 5, 150, 0.7) 100%);
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.forgotMessage {
+    margin: 15px 0;
+    color: white;
+}
+
+.forgotPasswordBtn,
+.forgotLoginBtn {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
+.forgotPasswordBtn:hover,
+.forgotLoginBtn:hover {
+    text-decoration: underline;
+}
+
+.alreadyText {
+    display: block;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 15px auto;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background: none;
+}
+
+.alreadyText:hover {
+    text-decoration: underline;
+}
+
+.invalidMessage {
+    display: flex;
+    align-items: center;
+    color: red;
+    margin: 20px 0;
+}
+
+.invalidMessage img {
+    margin-right: 8px;
+}
+
+.mobileNumber {
+    margin-left: 15px;
+}
+.successRegistr {
+    margin:40% 0;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.mobileNumber input {
+    flex: initial !important;
+    margin-top: 10px;
+    color: white;
+    width: 88% !important;
+    /* max-width: 100%; */
+    margin-right: 0px;
+    padding: 12px 10px;
+    outline: none;
+    border-radius: 8px;
+    background: none !important;
+    border: 1px solid rgba(100, 100, 100, 1);
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+ 
+  ::-webkit-scrollbar-thumb {
+    background: rgb(253, 79, 193); 
+    border-radius: 8px;
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(253, 79, 193); 
+  }

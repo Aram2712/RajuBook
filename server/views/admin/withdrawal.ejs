@@ -1,0 +1,19 @@
+<title><%- title %></title>
+<link rel="stylesheet" href="/css/withdrawalRequests.scss">
+<link rel="icon" href="/logos/logoMain.svg">
+<body>
+<div>
+    <%- include('../admin/adminMain.ejs') %>
+    <section class="page-contain">
+        <% result.forEach(infos => { %>
+            <a href="#" class="data-card">
+                <h3>₹<%- infos.amount %></h3>
+                <h4>Account: <%- infos.account %></h4>
+                <p class="text">User: <%- infos.exchange.slice(16) %></p>
+                <p class="text">Data: <%- infos.create_at.toString().slice(4, 15) %> </p>
+                <h4><%- title %></h4>
+            </a>
+        <% }) %>
+    </section>
+</div>
+</body>

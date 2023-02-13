@@ -1,0 +1,196 @@
+.customerSupport {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8), rgba(193, 6, 154, 0.8)), url("./images/support.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /*position: relative;*/
+
+
+}
+
+.customerSupportBlockContainer {
+    max-width: 1250px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    margin: auto;
+
+}
+
+.customerSupportBlockItem {
+    max-width: 730px;
+}
+
+.customerTitle {
+    color: #fff;
+    font-size: 75px;
+    line-height: 70px;
+    font-weight: 900;
+    text-shadow: 0 0 5px #fff;
+}
+
+.customerInfo {
+    max-width: 656px;
+    margin: 40px 0;
+    color: #fff;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+.border {
+    width: 200px;
+    height: 4px;
+    background: #fd4fc1;
+    border: 0;
+    margin: 0 0 41px;
+}
+
+.customerWhatsApp {
+    margin: 31px 0;
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+
+.kingDomSize{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.kingDom {
+    max-width: 370px;
+}
+
+.kingDomTitle {
+    max-width: 400px;
+    text-align: center;
+    font-size: 67px;
+    line-height: 63px;
+    font-weight: 900;
+    margin: 20px 0;
+    /* text-transform: uppercase; */
+    color: #fd4fc1;
+    text-shadow: 0 0 4px #fd4fc1;
+}
+
+
+@media (max-width: 1350px) {
+    .customerSupportBlockContainer {
+        max-width: 1140px;
+
+
+    }
+
+    .customerSupportBlockItem {
+        max-width: 580px;
+    }
+}
+
+
+@media (max-width: 1260px) {
+    .customerSupportBlockContainer{
+        max-width: 1080px;
+
+    }
+    .kingDomSize{
+        margin: 40px auto 0;
+    }
+}
+
+@media (max-width: 1080px) {
+
+    .customerSupportBlockContainer {
+        max-width: 470px;
+
+    }
+
+    .customerSupportBlockItem {
+        justify-content: center;
+    }
+
+    .customerInfo, .customerWhatsApp, .customerTitle {
+        text-align: center;
+    }
+
+    .border {
+        margin: auto;
+    }
+
+    .kingDom, .kingDomTitle {
+        max-width: 403px;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .customerTitle {
+        font-size: 50px;
+
+    }
+
+    .kingDom {
+        max-width: 370px;
+
+    }
+
+    .kingDomTitle {
+        font-size: 45px;
+    }
+}
+
+
+@media (max-width: 455px) {
+
+    .kingDom {
+        max-width: 322px;
+
+    }
+
+    .kingDomSize {
+        text-align: center;
+
+    }
+}
+
+
+@media (max-width: 425px) {
+
+    .customerSupportBlockItem {
+        max-width: 235px;
+        margin: auto;
+
+    }
+
+    .customerTitle {
+        font-size: 38px;
+        line-height: 54px;
+
+    }
+
+    .customerInfo {
+        font-size: 20px;
+        margin: 5px 0;
+
+    }
+
+    .customerWhatsApp {
+        font-size: 18px;
+
+    }
+
+    .kingDom {
+        max-width: 220px;
+
+    }
+
+    .kingDomTitle {
+        font-size: 40px;
+
+    }
+}

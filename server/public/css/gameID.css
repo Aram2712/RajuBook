@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: linear-gradient(to right, #181515, #3b3a3a);
+}
+
+.mainCard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title {
+    text-align: center;
+    margin: 10px;
+    color: #fff;
+}
+
+.img {
+    background-color: #2A404E;
+    border-radius: 6px 6px 0 0;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    margin: 10px;
+}
+
+.gameCard {
+    width: 264px;
+    height: 360px;
+    background: rgba(255, 255, 255, 0.90);
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.gameCardInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 30px;
+}
+
+.textBox {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-direction: column;
+}
+
+.key {
+    font-weight: 600;
+}
+
+.buttonBox{
+    text-align: center;
+    margin: 10px;
+}
+
+.editBtn {
+    width: 204px;
+    height: 30px;
+    background-color: #2A404E;
+    border-radius: 4px;
+}
+
+.editBtn:hover{
+    opacity: 0.8;
+}

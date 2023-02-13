@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/adminMain.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="icon" href="/logos/logoMain.svg">
+    <title><%- title %></title>
+</head>
+<body>
+<nav class="navMenu">
+    <ul>
+        <li>
+            <form action="/users_list" method="post">
+                <button type="submit">USER LIST</button>
+            </form>
+        </li>
+        <li>
+            <form action="http://rajubooks.co/" target="_blank" method="get">
+                <button>LOGIN AS A USER</button>
+            </form>
+        </li>
+        <li>
+            <form action="/find_deposits_request" method="post">
+                <button>DEPOSIT REQUEST</button>
+            </form>
+        </li>
+        <li>
+            <form action="/withdrawal_requests" method="post">
+                <button>WITHDRAWAL REQUEST</button>
+            </form>
+        </li>
+        <li>
+            <form action="/owner_payment_data" method="post">
+                <button>BANK ACCOUNTS</button>
+            </form>
+        </li>
+        <li>
+            <form action="/get_game_id" method="post">
+                <button>GAME REQUESTS</button>
+            </form>
+        </li>
+        <li>
+            <form action="/my_id_creator_page" method="post">
+                <button>CREATE MY ID</button>
+            </form>
+        </li>
+        <li>
+            <form action="/sign-out" method="get">
+                <button>SIGN OUT</button>
+            </form>
+        </li>
+    </ul>
+</nav>
+</body>
+</html>

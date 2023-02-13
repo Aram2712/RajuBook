@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="/css/changeOwnerData.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      crossorigin="anonymous" referrerpolicy="no-referrer"/>
+<link rel="icon" href="/logos/logoMain.svg">
+<body>
+<div class="container">
+
+    <h2><%- title %></h2>
+    <form method="post" action="/confirm_changing_own_data" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="<%- param.id %>">
+        <div class="group">
+            <input type="text" name="title" value="<%= param.title %>">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="title">Title</label>
+        </div>
+        <div class="group">
+            <input type="text" name="acc_no" value="<%= param.acc_no %>">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="acc_no">Account Number</label>
+        </div>
+        <div class="group">
+            <input type="text" name="ifsc" value="<%= param.ifsc %>">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="ifsc">IFSC</label>
+        </div>
+        <div class="group">
+            <input type="text" name="phone_no" value="<%= param.phone_no %>">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="phone_no">Phone Number</label>
+        </div>
+        <div class="group">
+            <input type="text" name="upi_id" value="<%= param.upi_id %>">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="upi_id">UPI ID</label>
+        </div>
+        <div class="group">
+            <input type="text" name="holder_name" value="<%= param.holder_name %>">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="holder_name">Holder Name</label>
+        </div>
+        <div class="group">
+            <input type="text" name="min_dep" value="<%= param.min_dep %>">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="min_dep">Min Deposit</label>
+        </div>
+        <div class="group">
+            <input type="text" name="max_dep" value="<%= param.max_dep %>">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label for="max_dep">Max Deposit</label>
+        </div>
+        <div class="group">
+            <input type="file" name="qrData">
+        </div>
+        <button type="submit" class="change">CHANGE</button>
+    </form>
+
+
+</div>
+</body>

@@ -1,0 +1,24 @@
+.mainHome{
+    padding-top: 95px;
+}
+
+.carusel {
+    padding: 10px 0;
+}
+.whatsapp_link {
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+}
+
+.whatsapplogo {
+    width: 100px;
+    height: auto;
+}
+
+@media screen and (max-width:567px) {
+    .whatsapp_link {
+        bottom: 80px;
+        left: 5px;
+    }
+}

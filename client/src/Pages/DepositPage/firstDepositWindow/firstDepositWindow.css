@@ -1,0 +1,36 @@
+.firstDepositWindow{
+
+}
+.bonus_image {
+    width: 40%;
+    margin-top: 10%;
+}
+.closeBtn {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    color: grey;
+    display: block;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+}
+.first_deposit_window_head {
+    color: #fd4fc1;
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10% auto 0 auto;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+.first_deposit_window_text {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    font-size: 20px;
+    letter-spacing: 1px;
+}

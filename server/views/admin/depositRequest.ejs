@@ -1,0 +1,90 @@
+<title><%- title %></title>
+<link rel="icon" href="/logos/logoMain.svg">
+<link rel="stylesheet" href="/css/depositRequest.css">
+
+<body>
+<div>
+    <%- include('../admin/adminMain.ejs') %>
+</div>
+<div class="menu">
+    <% result.reverse().forEach(items => { %>
+        <% if(items.status === 'Success'){ %>
+
+            <div id="container">
+                <div class="product-details">
+                    <div class="imgContain">
+                        <% if(items.game_name === 'TENEXCH'){ %>
+                            <div class="img">
+                                <img id="img" width="82" src="/gameLogos/tenexch.png" alt="img">
+                            </div>
+                        <% }else if(items.game_name === 'LOTUS'){ %>
+                            <div class="img">
+                                <img id="img" width="100" src="/gameLogos/lotus.png" alt="img">
+                            </div>
+                        <% } else if(items.game_name === 'UPEXCH'){ %>
+                            <div class="img">
+                                <img id="img" width="120" src="/gameLogos/upexch.png" alt="img">
+                            </div>
+                        <% }else if(items.game_name === 'WORLD'){ %>
+                            <div class="img">
+                                <img id="img" width="100" src="/gameLogos/world.png" alt="img">
+                            </div>
+                        <% }else if(items.game_name === 'GOD777'){ %>
+                            <div class="img">
+                                <img id="img" width="100" src="/gameLogos/god777.png" alt="img">
+                            </div>
+                        <% }else if(items.game_name === 'DIAMOND'){ %>
+                            <div class="img">
+                                <img id="img" width="100" src="/gameLogos/diamond.png" alt="img">
+                            </div>
+                        <% } else if(items.game_name === 'TAJ777'){ %>
+                            <div class="img">
+                                <img id="img" width="100" src="/gameLogos/taj777.png" alt="img">
+                            </div>
+                        <% }else if(items.game_name === 'LORDS') { %>
+                            <div class="img">
+                                <img id="img" width="100" src="/gameLogos/lords.png" alt="img">
+                            </div>
+                        <% } %>
+                    </div>
+                    <div class="titleBar">
+                        <h1 class="depositTitle">DEPOSIT REQUEST</h1>
+                        <% if(items.gameStatus === 'confirm'){ %>
+                            <div class="light" id="light"></div>
+                        <% } %>
+                    </div>
+                    <div class="requestInfo">
+                        <ul>
+                            <p><span class="holderName">Order ID:</span> <span
+                                        class="info"><%- items.order_id %></span>
+                            </p>
+                            <p><span class="holderName">Transaction amount:</span> <%- items.transaction_amount %>
+                            </p>
+                            <p><span class="holderName">Game:</span> <%- items.game_name %></p>
+                            <p><span class="holderName">Holder:</span> <%- items.player_email %></p>
+                            <p><span class="holderName">Phone NO:</span> <%- items.player_mobile %></p>
+                            <p>
+                                <span class="holderName">Request Data:</span> <%- items.createAt.toString().slice(4, 15) %>
+                            </p>
+                        </ul>
+                        <div class="confirmBody">
+                            <form action="/confirm_deposit_for_game" method="post">
+                                <input type="hidden" value="<%- items.id %>" name="id">
+                                <input type="hidden" value="confirm" name="confirm">
+                                <button type="submit" class="btnDelete">Confirm</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <% } %>
+    <% }) %>
+</div>
+<body>
+
+
+
+
+
+

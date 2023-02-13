@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+
+body {
+    background: #4d4d50;
+    background: linear-gradient(to right, #181515, #3b3a3a);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.depositTitle{
+    letter-spacing: 1px;
+}
+
+#container {
+    background: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 5em auto;
+    height: 400px;
+    width: 350px;
+}
+
+
+.product-details {
+    text-align: center;
+    height: 100%;
+}
+
+.product-details ul {
+    padding-left: 0;
+    font-family: 'Farsan', cursive;
+    display: contents;
+
+}
+.product-details ul p {
+    text-align: start;
+    margin: 10px 30px 5px 14px;
+}
+
+.holderName{
+    margin-right: 20px;
+}
+
+
+#container .product-details h1 {
+    font-family: 'Bebas Neue', cursive;
+    display: inline-block;
+    position: relative;
+    font-size: 30px;
+    color: #344055;
+    margin: 0;
+
+}
+
+.requestInfo{
+    display: flex;
+    flex-direction: column;
+}
+
+.img{
+    background-color: #2A404E ;
+    border-radius: 6px 6px 0 0;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img img{
+    margin: 10px;
+}
+
+.btnDelete{
+    width: 120px;
+    height: 30px;
+    background-color: #2E3C40;
+    border-radius: 6px;
+    margin: 5px;
+}
+.btnDelete:hover{
+    background-color: #2A404E;
+}
+.titleBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.light{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #00ff04;
+    box-shadow:0px 0px 8px 5px rgba(3, 250, 81, 0.97);
+}

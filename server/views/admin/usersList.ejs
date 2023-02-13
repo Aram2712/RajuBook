@@ -1,0 +1,57 @@
+<title><%-title%></title>
+<link rel="stylesheet" href="/css/usersList.css">
+<link rel="icon" href="/logos/logoMain.svg">
+<body class="user_list">
+
+
+
+<div class="table-wrapper">
+    <header><%- include('../admin/adminMain.ejs') %>
+        <h2 class="title"><%- title %></h2>
+        <div class="searchBody">
+            <form action="/search_users" method="post">
+                <input type="text" name="search" id="search" placeholder="  Search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+        <table class="fl-table">
+            <thead>
+            <tr>
+                <th>User ID:</th>
+                <th>Full Name:</th>
+                <th>Email Address:</th>
+                <th>City:</th>
+                <th>Phone:</th>
+                <th>Whatsapp number:</th>
+                <th>Balance:</th>
+                <th>Action:</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <% users.forEach(function(user){
+            %>
+                <% if (user.id > 0){ %>
+                    <tr>
+                        <td><%= user.id %></td>
+                        <td> <%= user.fullName %></td>
+                        <td> <%= user.email %></td>
+                        <td><%= user.city %> </td>
+                        <td><%= user.phone %> </td>
+                        <td><%= user.whatsapp %> </td>
+                        <td><%= user.balance %> </td>
+                        <td>
+                            <form action="/confirm_requested_balance/<%- user.id%>" method="post">
+                                <input type="hidden" value="<%- user.id %>" name="id">
+                                <button style="border: none;cursor: pointer">
+                                    <img src="/icons/edit.png" alt="edit" width="24px">
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+            <% }}) %>
+            </tbody>
+        </table>
+    </header>
+</div>
+</body>

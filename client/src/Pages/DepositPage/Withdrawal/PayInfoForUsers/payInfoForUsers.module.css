@@ -1,0 +1,15 @@
+.mainPayInfoBlock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    margin: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.noInfoText{
+    color: #C9A149;
+    margin: 0;
+}

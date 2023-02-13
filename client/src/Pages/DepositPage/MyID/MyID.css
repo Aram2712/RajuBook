@@ -1,0 +1,108 @@
+.my_id {
+    width: 99%;
+    height:auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin:20px auto;
+}
+
+.id_info_box {
+    width: 30%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 20px 20px 0 0 ;
+}
+.id_info_header_box {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.id_info_header_text {
+    color:white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin: 0 10px;
+}
+.id_info_pay_owner_box {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2A404E;
+}
+.pay_title {
+    color:white;
+    letter-spacing: 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.id_info_main_box {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #2A404E;
+    padding: 20px 0;
+}
+.id_info_main_left_box {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border:none;
+    align-items: flex-start;
+
+}
+
+.id_info_main_right_box {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border: none;
+    align-items: flex-end;
+}
+.id_info_main_left_box>p, .id_info_main_right_box>p {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+@media screen and (max-width:1250px) and (min-width:800px) {
+    .id_info_box {
+        width: 45%;
+    }
+}
+@media screen and (max-width:800px) and (min-width:567px) {
+    .my_id{
+        flex-direction: column;
+        align-items: center;
+    }
+    .id_info_box {
+        width: 70%;
+        margin: 15px auto;
+    }
+}
+@media screen and (max-width:567px) {
+    .id_info_box {
+        width: 100%;
+        margin: 15px auto;
+    }
+    .id_info_main_left_box>p, .id_info_main_right_box>p {
+        font-size: 13px;
+    }
+}

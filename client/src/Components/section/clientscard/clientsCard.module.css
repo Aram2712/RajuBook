@@ -1,0 +1,25 @@
+.clientsCard{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./images/p-back.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.carouselContainer{
+    max-width: 1309px;
+    margin:auto ;
+    padding: 50px 0;
+}
+
+.clientsCarousel{
+    max-width: 289px;
+    padding: 5px 3px;
+    margin:auto;
+}
+
+@media (max-width: 400px) {
+    .clientsCarousel{
+        max-width: 250px;
+    }
+}
+

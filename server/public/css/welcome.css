@@ -1,0 +1,6 @@
+#body{
+    background:url('/logos/logoMain.svg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgb(1, 9, 16);
+}

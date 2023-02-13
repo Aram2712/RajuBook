@@ -1,0 +1,74 @@
+<title><%- title %></title>
+<link rel="icon" href="/logos/logoMain.svg">
+<link rel="stylesheet" href="/css/gameID.css">
+<body>
+<%- include('../admin/adminMain.ejs') %>
+<h2 class="title">GAME REQUESTS</h2>
+<div class="mainCard">
+    <% result.map(params => { %>
+        <div class="gameCard">
+            <% if(params.gameName === 'TENEXCH'){ %>
+                <div class="img">
+                    <img id="img" width="82" src="/gameLogos/tenexch.png" alt="img">
+                </div>
+            <% }else if(params.gameName === 'LOTUS'){ %>
+                <div class="img">
+                    <img id="img" width="100" src="/gameLogos/lotus.png" alt="img">
+                </div>
+            <% } else if(params.gameName === 'UPEXCH'){ %>
+                <div class="img">
+                    <img id="img" width="120" src="/gameLogos/upexch.png" alt="img">
+                </div>
+            <% }else if(params.gameName === 'WORLD'){ %>
+                <div class="img">
+                    <img id="img" width="100" src="/gameLogos/world.png" alt="img">
+                </div>
+            <% }else if(params.gameName === 'GOD777'){ %>
+                <div class="img">
+                    <img id="img" width="100" src="/gameLogos/god777.png" alt="img">
+                </div>
+            <% }else if(params.gameName === 'DIAMOND'){ %>
+                <div class="img">
+                    <img id="img" width="100" src="/gameLogos/diamond.png" alt="img">
+                </div>
+            <% } else if(params.gameName === 'TAJ777'){ %>
+                <div class="img">
+                    <img id="img" width="100" src="/gameLogos/taj777.png" alt="img">
+                </div>
+            <% }else if(params.gameName === 'LORDS') { %>
+                <div class="img">
+                    <img id="img" width="100" src="/gameLogos/lords.png" alt="img">
+                </div>
+            <% } %>
+            <div class="gameCardInfo">
+                <div class="textBox">
+                    <span class="key">Game name: </span>
+                    <p><%- params.gameName %></p>
+                </div>
+                <div class="textBox">
+                    <span class="key">Username: </span>
+                    <p><%- params.userName %></p>
+                </div>
+                <div class="textBox">
+                    <span class="key">Email: </span>
+                    <p><%- params.holderName %></p>
+                </div>
+                <div class="textBox">
+                    <span class="key">Amount: </span>
+                    <p><%- params.amount %></p>
+                </div>
+<!--                <div class="textBox">-->
+<!--                    <form action="/edit_user_game_info" method="post">-->
+<!--                        <input type="hidden" name="id" value="<%- params.id %>">-->
+<!--                        <button type="submit" class="editBtn">Edit</button>-->
+<!--                    </form>-->
+<!--                </div>-->
+            </div>
+
+        </div>
+
+    <% }) %>
+
+</div>
+
+</body>

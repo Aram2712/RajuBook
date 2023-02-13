@@ -1,0 +1,31 @@
+<title><%- title%></title>
+<link rel="icon" href="/logos/logoMain.svg">
+<link rel="stylesheet" href="/css/confirmGame.css">
+
+<body>
+<%- include('../admin/gameTransfers.ejs') %>
+
+<div class="pop-up-body">
+    <% result.forEach(params => {%>
+        <div class="pop-up">
+            <div class="pop-up-header">
+
+            </div>
+            <div class="pop-up-footer">
+                <form action="/confirm_game_transfer" method="post">
+                    <input type="text" disabled value="<%- params.from_gameTitle%> > <%- params.to_gameTitle%>">
+                    <input type="hidden" name="id" value="<%- params.id%>">
+                    <input type="text" disabled value="<%- params.status%>" name="status">
+                    <label for="active">Active</label>
+                    <input type="radio" value="Active" id="active" name="status" checked>
+                    <label for="rejected">Rejected</label>
+                    <input type="radio" value="Rejected" id="rejected" name="status">
+                    <input type="text" value="<%- params.amount%>" name="owner_title" disabled>
+                    <input type="submit" value="Submit" class="confirm">
+                </form>
+            </div>
+        </div>
+    <% })%>
+
+</div>
+</body>

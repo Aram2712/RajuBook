@@ -1,0 +1,19 @@
+<title><%- title%></title>
+<link rel="icon" href="/logos/logoMain.svg">
+<link rel="stylesheet" href="/css/emailSending.css">
+<body>
+<form action="/admin_verifying" method="post">
+    <h3 id="title"><%- title %></h3>
+    <input type="email" name="email" id="email" placeholder="Email Address" required class="input"><br>
+    <input type="password" name="password" id="password" placeholder="Password" required class="input"><br>
+    <button type="submit" class="submit">Verify</button>
+</form>
+
+<% if (title === 'Wrong email or password'){ %>
+    <script>
+        let email = document.getElementById("email"),pass = document.getElementById("password")
+        email.style.border = '1px solid red'
+        pass.style.border = '1px solid red'
+    </script>
+<% } %>
+</body>

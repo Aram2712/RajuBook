@@ -1,0 +1,30 @@
+.btnStyle {
+    width: 200px;
+    height: 100px;
+    font-size: 23px;
+    background: linear-gradient(to bottom, #fd4fc1, rgba(225, 5, 150, 0.7));
+    color: #ffffff !important;
+    font-weight: 900;
+    text-shadow: 1px 1px #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+}
+
+
+.btnStyle:hover {
+    box-shadow: 0 0 200px 60px #fd4fc1 inset;
+
+}
+
+
+@media (max-width: 1080px) {
+
+    .btnStyle {
+        margin: auto;
+    }
+}
+
+

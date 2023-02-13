@@ -1,0 +1,69 @@
+.mainDepositPage{
+    padding-top: 125px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mainDepositPage .depositHeading{
+    margin: 0;
+}
+
+.btnControl {
+    display: flex;
+    justify-content: space-between;
+}
+.note_box {
+    width: 99%;
+    height: 40px;
+    border-radius: 3px;
+    margin: 20px auto ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    letter-spacing: 1px;
+    background-color: #fdd;
+    border-left: 6px solid #f44336;
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+    font-size: 13px; 
+    font-weight: 500;
+    padding-left: 10px;
+    color: black;
+}
+.btnControl button{
+    background-color: #2A404E;
+    max-width: 595px;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    display: block;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.active{
+    background-color: #fd4fc1 !important;
+}
+
+@media screen and (max-width:1000px) and (min-width:576px) {
+    .note_box{
+        font-size: 10px; 
+        height: 45px;
+    }
+}
+@media(max-width:600px) {
+    .btnControl {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .note_box{
+        font-size: 8px; 
+        height: 60px;
+    }
+}

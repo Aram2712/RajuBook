@@ -1,0 +1,56 @@
+.getIdContainer {
+    background: linear-gradient(45deg, rgb(160, 14, 183) 0%, rgb(43, 48, 114) 30%, rgb(37, 243, 255) 47%, rgb(14, 56, 104) 63%, rgba(108, 35, 113, 100) 100%);
+}
+
+.getIdBlock {
+    max-width: 1170px;
+    padding: 22px 0;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+.getIdTitle{
+    font-size: calc(18px + 18 * ((100vw - 320px) / 1600));
+    color: #fff;
+
+}
+.clickGetId {
+    padding: 13px 20px;
+    line-height: 1;
+    color: #fff;
+    background-color: #fd4fc1;
+    border-radius: 0.2rem;
+    /* text-transform: uppercase; */
+    font-size: calc(15px + 9 * ((100vw - 320px) / 1600));
+    border: none;
+    transition: 0.4s;
+
+}
+
+.clickGetId:hover {
+    filter: brightness(95%) saturate(95%);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+
+@media (max-width: 1240px) {
+
+    .getIdBlock{
+        justify-content: space-around;
+
+    }
+}
+
+@media (max-width: 425px){
+
+    .getIdTitle{
+        padding: 10px;
+
+    }
+}

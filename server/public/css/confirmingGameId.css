@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+.pop-up-body{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    bottom: 140px;
+    position: relative;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.pop-up-header{
+    background-color: #0f131a;
+    border-radius: 6px;
+    color: #fff2f2;
+}
+.pop-up{
+    width: 410px;
+    height: 330px;
+    position: absolute;
+    border: 1px solid #fd4fc1;
+    border-radius: 6px;
+    background-color: white;
+    text-align: center;
+}
+
+.pop-up-footer{
+    margin-top: 20px;
+}
+
+.pop-up-footer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pop-up-footer form input {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    font-size: 20px;
+    margin: 10px 0;
+    width: 80%;
+}
+
+.confirm{
+    border-radius: 6px;
+    background:linear-gradient(180deg,#fd4fc1,#b85cc2);
+    cursor: pointer;
+}
+
+.confirm:hover{
+    background:linear-gradient(180deg,#b85cc2,#fd4fc1);
+}
+
+.actRej{
+    display: flex;
+}
+
+.actRej label{
+    padding-left: 15px ;
+    font-weight: 600;
+}

@@ -1,0 +1,93 @@
+.closeBtn {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    color: grey;
+    display: block;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    margin-left: auto;
+}
+
+.logo{
+    width: 150px;
+}
+
+.closeBtn i {
+    font-size: 25px;
+}
+
+form .logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.invalidMessage {
+    display: flex;
+    align-items: center;
+    color: red;
+    margin: 20px 0;
+}
+
+.invalidMessage img {
+    margin-right: 8px;
+}
+
+
+.signInBtn {
+    margin-top: 15px;
+    cursor: pointer;
+    width: 100%;
+    color: rgba(9, 25, 93, 1);
+    text-transform: uppercase;
+    max-width: 480px;
+    outline: none;
+    border: 1px solid rgba(100, 100, 100, 1);
+    background: #fd4fc1;
+    padding: 12px 10px;
+    border-radius: 8px;
+}
+
+.signInBtn:hover {
+    background: linear-gradient(180deg, #fd4fc1 0%, rgba(225, 5, 150, 0.7) 100%);
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.forgotMessage{
+    text-align: center;
+    margin: 10px 0;
+    color: white;
+}
+
+.forgotPasswordBtn, .forgotLoginBtn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+}
+
+.forgotPasswordBtn:hover, .forgotLoginBtn:hover{
+    text-decoration: underline;
+}
+
+.dontHaveAnAccount button{
+    display: block;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 15px auto;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background: none;
+}
+
+.dontHaveAnAccount button:hover{
+    text-decoration: underline;
+}

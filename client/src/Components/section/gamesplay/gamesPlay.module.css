@@ -1,0 +1,160 @@
+.gamesPlay {
+    background-image: linear-gradient(rgb(21, 21, 21), rgb(16, 15, 15)), url("./images/bg3.webp");
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.gamesPlayContainer {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.gamesPlayBlock {
+    max-width: 478px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.gamesPlayItem {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.gamesImg {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.gamesPlayInfoContainer {
+    max-width: 570px;
+    margin-top: 80px;
+}
+
+.gamesPlayTitle {
+    font-size: 25px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.gamesPlayInfoTitle {
+    color: #fff;
+    font-size: 75px;
+    line-height: 95px;
+    font-weight: 900;
+    text-shadow: 0 0 5px #fff;
+    margin: 0 0;
+}
+
+
+.gamesPlayInfoTitleTwo {
+    color: #fff;
+    font-size: 43px;
+    line-height: 43px;
+    font-weight: 900;
+    text-shadow: 0 0 5px #fff;
+}
+
+.gamesPlayInfoText {
+    max-width: 583px;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 50px 0;
+
+}
+
+hr {
+    width: 200px;
+    height: 4px;
+    background: #fd4fc1;
+    border: 0;
+    margin: 50px 0;
+}
+
+.gamesPlayInfoWhatsApp {
+    color: #fff;
+    font-size: 30px;
+    line-height: 69px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1081px) {
+
+    .gamesPlayContainer {
+        max-width: 1000px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .gamesPlayInfoTitleTwo {
+        text-align: center;
+    }
+
+    hr {
+        margin: auto;
+
+    }
+}
+
+
+@media (max-width: 600px) {
+    .gamesPlayInfoTitle {
+        font-size: 48px;
+    }
+    .gamesPlayInfoText, .gamesPlayInfoWhatsApp {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 600px) {
+    .gamesPlayInfoBtn {
+        width: 258px !important;
+        height: 63px !important;
+        font-size: 22px !important;
+    }
+    .gamesImg{
+        width: 95px;
+        height: 86px;
+    }
+    .gamesPlayTitle{
+        font-size: 17px;
+    }
+    .gamesPlayInfoContainer{
+        margin-top: 0;
+    }
+}
+
+
+@media (max-width: 385px) {
+    .gamesPlayInfoTitle {
+        font-size: 33px;
+    }
+
+    .gamesPlayInfoTitleTwo {
+        font-size: 36px;
+    }
+
+    .gamesPlayInfoText {
+        font-size: 19px;
+    }
+
+    .gamesPlayInfoWhatsApp {
+        font-size: 18px;
+    }
+    .gamesPlayInfoBtn{
+        width: 183px !important;
+        height: 50px !important;
+        font-size: 16px !important;
+    }
+}
+

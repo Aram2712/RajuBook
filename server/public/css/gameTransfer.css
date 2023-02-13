@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: linear-gradient(to right, #181515, #3b3a3a);
+}
+
+.imgBody {
+    background-color: #2A404E;
+    border-radius: 6px 6px 0 0;
+    text-align: center;
+    height: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBody img {
+    margin: 10px;
+}
+
+.transferBody {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.gameCardBody {
+    margin: 20px;
+    width: 350px;
+    height: 460px;
+    background-color: rgba(255, 255, 255, 0.90);
+    border-radius: 10px;
+}
+
+.gameInputs {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.gameInputs input {
+    width: 264px;
+    height: 32px;
+    border: 1px solid #3b3a3a;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 0 0 8px 0;
+}
+
+.create {
+    margin: 34px 0 0 0 ;
+    width: 264px;
+    height: 32px;
+    background: linear-gradient(180deg, #fd4fc1, #b85cc2);
+    color: #000a15;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+.create:hover {
+    background: linear-gradient(180deg, #b85cc2, #fd4fc1);
+}
+
+.gameInputs input:focus{
+    outline: none;
+    background-color: #2A404E;
+    color: white;
+}

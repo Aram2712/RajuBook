@@ -1,0 +1,35 @@
+<title><%- title %></title>
+<link rel="stylesheet" href="/css/ownerData.css">
+<link rel="icon" href="/logos/logoMain.svg">
+<body>
+<%- include('../admin/adminMain.ejs') %>
+<% params.forEach(function(param) { %>
+    <div class="banking">
+
+        <% if (param.id > 0){ %>
+
+            <div class="card">
+                <div class="box">
+                    <div class="content">
+                        <h2><img src="<%- param.imgUrl %>" width="100px" alt=""></h2>
+                        <h3><%= param.title %></h3>
+                        <p><span>ACC NO:</span> <%= param.acc_no %></p>
+                        <p><span>IFSC:</span> <%= param.ifsc %></p>
+                        <p><span>Phone NO:</span> <%= param.phone_no %></p>
+                        <p><span>UPI ID:</span> <%= param.upi_id %></p>
+                        <p><span>HOLDER NAME:</span> <%= param.holder_name %></p>
+                        <p><span>MIN DEPOSIT:</span> <%= param.min_dep %></p>
+                        <p><span>MAX DEPOSIT:</span> <%= param.max_dep %></p>
+                        <form action="/owner_data_change/<%- param.id %>" method="post">
+                            <input type="hidden" value="<%- param.id %>" name="id">
+                            <button class="edit">EDIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        <% } %>
+    </div>
+<% }) %>
+</body>
+
